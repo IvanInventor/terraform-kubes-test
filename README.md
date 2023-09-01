@@ -49,3 +49,4 @@ nginx-example   NodePort    10.96.209.138   <none>        80:30201/TCP   3m47s
 ```bash
 $ terraform apply
 ```
+![alt text](webpage.png)
