@@ -32,4 +32,13 @@ cluster_ca_certificate = "LS0tLS1CRUdJTiB..."       /* clusters.cluster. certifi
 ```bash
 $ terraform init
 ```
+Check for running services
+```bash
+$ kubectl get services
+```
+```text
+NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP        48m
+nginx-example   NodePort    10.96.209.138   <none>        80:30201/TCP   3m47s
+```
 
