@@ -41,4 +41,11 @@ NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
 kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP        48m
 nginx-example   NodePort    10.96.209.138   <none>        80:30201/TCP   3m47s
 ```
-
+# Server scaling
+## Adding more replicas
+- Change `kubernetes.tf` `replicas` variable:
+`replicas = 4`
+- Apply changes
+```bash
+$ terraform apply
+```
